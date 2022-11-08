@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./index.css">
+  <title>EXCEL to JSON</title>
+</head>
+<body>
+  <main>
+    <div>
+      <label for="excel">Upload excel:</label>
+      <input
+        id="input"
+        name="excel"
+        type="file"
+        accept=".xlsx,.xls,.xlsm"
+      />
+    </div>
+    <div>
+      <button type="button" id="convert-button">Convert</button>
+    </div>
+    <div id="loader">
+      <img src="./assets/loading.svg" alt="loading..." />
+      <span>Loading...</span>
+    </div>
+    <div id="downloader-json">
+      <a href="" download="json.json" id="download-button-json">Download JSON</a>
+    </div>
+  </main>
+  <script defer src="./helpers.js"></script>
+  <script defer src="./index.js"></script>
+</body>
+</html>

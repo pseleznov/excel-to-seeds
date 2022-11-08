@@ -1,0 +1,25 @@
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+#loader {
+  display: none;
+  align-items: center;
+  gap: 10px;
+}
+
+#loader img {
+    width: 60px;
+    height: 60px;
+}
+
+#downloader-json {
+  display: none;
+}
+
+#downloader-json a {
+  text-decoration: none;
+  color: #000;
+}
